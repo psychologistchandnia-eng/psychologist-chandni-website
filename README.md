@@ -1,9 +1,27 @@
-# Psychologist Chandni Website
+# Psychologist Chandni Akhenia
 
-Static site source prepared for the public GitHub repository `psychologist-chandni-website` and custom domain `besttherapistnearme.in`.
+Premium, mobile-first website for Psychologist Chandni Akhenia in Malad West, Mumbai. Built with Next.js App Router and exported as a static site for GitHub Pages.
 
-- `index.html` is the supplied website, updated with the contact details provided by the owner.
-- `CNAME` configures the custom domain for GitHub Pages.
-- The topic cards remain on the page; links to article files absent from the supplied folder were removed.
+## Local development
 
-The domain currently serves a live site via Vercel. Its DNS uses GoDaddy nameservers; pointing it at GitHub Pages will replace the current public site. Configure GitHub Pages and its custom domain before changing DNS.
+```sh
+pnpm install
+pnpm dev
+```
+
+## Production build
+
+```sh
+pnpm install --frozen-lockfile
+pnpm build
+```
+
+The static site is generated in `out/`. Every push to `main` builds the site and deploys it to GitHub Pages through `.github/workflows/deploy.yml`.
+
+## Domain
+
+The canonical URL is `https://www.besttherapistnearme.in`. GitHub Pages must use **GitHub Actions** as its Pages deployment source and `www.besttherapistnearme.in` as the custom domain. The apex domain should remain connected as an alias and forward to the canonical `www` host through GitHub Pages. The `public/CNAME` file is included in the export.
+
+## Site information
+
+Business listing details, address, appointment hours, contact details, social links and page URLs are centralized in `lib/site.ts`. Service content and routes are in `lib/services.ts`.
