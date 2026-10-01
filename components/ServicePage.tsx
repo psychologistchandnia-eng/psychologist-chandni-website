@@ -32,7 +32,7 @@ export default function ServicePage({ service }: { service: Service }) {
           ]} />
           <div className="service-heading">
             <p className="eyebrow">Psychology · Malad West, Mumbai</p>
-            <h1>{service.title} <span>in Malad West, Mumbai</span></h1>
+            <h1>{service.h1}</h1>
             <p className="lead">{service.intro}</p>
             <div className="button-row">
               <a className="button button-primary" href={site.whatsapp} target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
