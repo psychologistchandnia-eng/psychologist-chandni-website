@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import LineIcon, { iconFor } from "@/components/LineIcon";
@@ -6,13 +5,14 @@ import MapEmbed from "@/components/MapEmbed";
 import Reveal from "@/components/Reveal";
 import SiteJsonLd from "@/components/SiteJsonLd";
 import { services, servicePath } from "@/lib/services";
-import { absoluteUrl, site } from "@/lib/site";
+import { site } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Psychologist in Malad West, Mumbai",
   description: "Meet Psychologist Chandni Akhenia in Malad West, Mumbai. Explore counselling for anxiety, relationships, stress, grief and emotional wellbeing, in person or online.",
-  alternates: { canonical: absoluteUrl("/") }
-};
+  path: "/"
+});
 
 const reviews = [
   "“Full of empathy, kindness and positivity.”",
@@ -28,7 +28,7 @@ export default function HomePage() {
         <div className="shell hero-grid">
           <div className="hero-copy">
             <p className="eyebrow"><span className="eyebrow-rule" />Psychological support · Malad West, Mumbai</p>
-            <h1>A quieter place to <em>understand what you’re carrying.</em></h1>
+            <h1>Psychologist in Malad West, <em>Mumbai, at your pace.</em></h1>
             <p className="hero-lead">I’m Chandni Akhenia, a psychologist offering a warm, collaborative space for emotional wellbeing, relationships and personal growth.</p>
             <div className="button-row">
               <a className="button button-primary" href={site.whatsapp} target="_blank" rel="noopener noreferrer">Book on WhatsApp <span aria-hidden="true">↗</span></a>
@@ -139,7 +139,7 @@ export default function HomePage() {
       <section className="section conversation-section">
         <div className="shell conversation-grid">
           <Reveal className="conversation-art">
-            <Image src="/images/quiet-room-line-art.svg" alt="Decorative line illustration of two chairs, a small table and a plant" width={520} height={400} sizes="(max-width: 760px) 88vw, 500px" />
+            <Image src="/images/quiet-room-line-art.svg" alt="" width={520} height={400} sizes="(max-width: 760px) 88vw, 500px" />
           </Reveal>
           <Reveal className="conversation-copy">
             <p className="eyebrow">A space to begin</p>
@@ -176,7 +176,7 @@ export default function HomePage() {
           <Reveal className="location-copy">
             <p className="eyebrow">The practice</p>
             <h2>A familiar place to begin.</h2>
-            <p>In-person consultations are at Sun Multispeciality Hospital in Malad West. Online appointments are also available by prior booking.</p>
+            <p>In-person consultations are at Sun Multispeciality Hospital in Malad West. Online appointments are available by prior booking and can be discussed for people in Kandivali, Kandivali West, Borivali, Andheri, Bandra and elsewhere in Mumbai.</p>
             <address>{site.address}</address>
             <p className="hours-summary"><strong>Current listed hours</strong><br />{site.hours.map((hour) => hour.label).join(" · ")}</p>
             <a className="text-link" href={site.googleBusiness} target="_blank" rel="noopener noreferrer">Open directions on Google Maps <span aria-hidden="true">↗</span></a>

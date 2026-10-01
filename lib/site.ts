@@ -28,7 +28,7 @@ export const site = {
   googleRating: "4.9",
   googleReviewCount: 42,
   portrait: "/images/chandni-akhenia.jpg",
-  areasServed: ["Malad", "Kandivali", "Goregaon", "Borivali", "Mumbai"],
+  areasServed: ["Malad", "Kandivali", "Kandivali West", "Goregaon", "Borivali", "Andheri", "Bandra", "Mumbai"],
   profileLinks: {
     practo: "",
     youtube: ""

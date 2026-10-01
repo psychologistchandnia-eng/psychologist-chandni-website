@@ -9,15 +9,23 @@ import { absoluteUrl, site } from "@/lib/site";
 export default function ServicePage({ service }: { service: Service }) {
   const path = servicePath(service.slug);
   const bookingUrl = site.whatsapp.split("?")[0] + "?text=" + encodeURIComponent(`Hi Chandni, I’d like to book a consultation about ${service.title.toLowerCase()}.`);
-  const condition = { "@type": "MedicalCondition", "name": service.condition };
   const pageSchema = {
     "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
+    "@type": "WebPage",
+    "@id": absoluteUrl(path) + "#webpage",
     "name": service.title + " in Malad West, Mumbai",
+    "description": service.intro,
     "url": absoluteUrl(path),
-    "about": condition,
-    "isPartOf": { "@type": "WebSite", "name": site.name, "url": site.baseUrl },
-    "author": { "@type": "Person", "name": site.practitioner, "jobTitle": site.title }
+    "about": { "@type": "Thing", "name": service.condition },
+    "isPartOf": { "@id": site.baseUrl + "/#website" },
+    "author": { "@id": site.baseUrl + "/#chandni" },
+    "mainEntity": {
+      "@type": "Service",
+      "name": "Counselling support for " + service.title.toLowerCase(),
+      "serviceType": service.title,
+      "provider": { "@id": site.baseUrl + "/#practice" },
+      "areaServed": site.areasServed.map((name) => ({ "@type": "Place", name }))
+    }
   };
 
   return (

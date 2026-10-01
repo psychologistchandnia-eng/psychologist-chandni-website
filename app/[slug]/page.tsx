@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ServicePage from "@/components/ServicePage";
 import { services, serviceBySlug, servicePath } from "@/lib/services";
-import { absoluteUrl } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
 export const dynamicParams = false;
 
@@ -15,17 +15,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = serviceBySlug.get(slug);
   if (!service) return {};
   const title = service.h1;
-  return {
+  return pageMetadata({
     title,
     description: "Learn about " + service.title.toLowerCase() + " support in Malad West, Mumbai with Psychologist Chandni Akhenia. Read about common concerns, counselling and first visits.",
-    alternates: { canonical: absoluteUrl(servicePath(service.slug)) },
-    openGraph: {
-      type: "article",
-      title: title + " | Chandni Akhenia",
-      description: "Patient-friendly information about " + service.title.toLowerCase() + " support in Malad West, Mumbai.",
-      url: absoluteUrl(servicePath(service.slug))
-    }
-  };
+    path: servicePath(service.slug),
+    openGraphType: "article"
+  });
 }
 
 export default async function ServiceRoute({ params }: { params: Promise<{ slug: string }> }) {

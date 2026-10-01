@@ -6,6 +6,14 @@ export default function SiteJsonLd() {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": site.baseUrl + "/#website",
+        "url": site.baseUrl,
+        "name": site.name,
+        "inLanguage": "en-IN",
+        "publisher": { "@id": site.baseUrl + "/#chandni" }
+      },
+      {
         "@type": "Person",
         "@id": site.baseUrl + "/#chandni",
         "name": site.practitioner,
@@ -18,6 +26,7 @@ export default function SiteJsonLd() {
       {
         "@type": "ProfessionalService",
         "@id": site.baseUrl + "/#practice",
+        "isPartOf": { "@id": site.baseUrl + "/#website" },
         "name": site.name,
         "url": site.baseUrl,
         "image": site.baseUrl + site.portrait,

@@ -26,7 +26,6 @@ export const metadata: Metadata = {
     template: "%s | Chandni Akhenia"
   },
   description: "Psychological counselling with Chandni Akhenia in Malad West, Mumbai and online. Explore support for anxiety, relationships, stress and emotional wellbeing.",
-  alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",

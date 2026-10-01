@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import Reveal from "@/components/Reveal";
 import { absoluteUrl, site } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "About Chandni Akhenia, Psychologist in Malad West",
   description: "Learn about Chandni Akhenia, her M.A. in Clinical Psychology, three years of experience and collaborative approach to care in Malad West, Mumbai.",
-  alternates: { canonical: absoluteUrl("/about/") }
-};
+  path: "/about/"
+});
 
 export default function AboutPage() {
   const schema = {
@@ -69,7 +69,7 @@ export default function AboutPage() {
       <section className="section training-section" id="internships-training">
         <div className="shell training-grid">
           <Reveal className="training-art">
-            <Image src="/images/learning-notes-line-art.svg" alt="Decorative illustration of an open notebook and a growing plant" width={440} height={360} sizes="(max-width: 760px) 88vw, 420px" />
+            <Image src="/images/learning-notes-line-art.svg" alt="" width={440} height={360} sizes="(max-width: 760px) 88vw, 420px" />
           </Reveal>
           <Reveal className="training-copy">
             <p className="eyebrow">Internships, training & experience</p>

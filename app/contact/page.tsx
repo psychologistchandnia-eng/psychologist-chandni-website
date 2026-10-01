@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import MapEmbed from "@/components/MapEmbed";
 import Reveal from "@/components/Reveal";
 import { appointmentHoursText, absoluteUrl, site } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Contact and Directions | Psychologist in Malad West, Mumbai",
   description: "Contact Psychologist Chandni Akhenia by WhatsApp, phone or email. Find the clinic at Sun Multispeciality Hospital in Malad West, Mumbai, and view current hours.",
-  alternates: { canonical: absoluteUrl("/contact/") }
-};
+  path: "/contact/"
+});
 
 export default function ContactPage() {
   const schema = {

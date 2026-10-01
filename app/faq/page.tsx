@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import Reveal from "@/components/Reveal";
 import { absoluteUrl, site } from "@/lib/site";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Frequently Asked Questions | Psychologist in Malad West",
   description: "Answers about therapy, confidentiality, online appointments, first visits, teenagers and booking with Psychologist Chandni Akhenia in Malad West, Mumbai.",
-  alternates: { canonical: absoluteUrl("/faq/") }
-};
+  path: "/faq/"
+});
 
 const questions = [
   ["Is my consultation confidential?", "Privacy matters. Confidentiality and its legal or safety-related limits are explained before care begins. Information is handled with care and shared only as permitted or required."],
