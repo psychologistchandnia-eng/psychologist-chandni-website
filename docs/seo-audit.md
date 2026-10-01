@@ -33,6 +33,7 @@ The service pages share a single route template and central service data in `lib
 - Focus-visible styling, a skip link, semantic headings, a labeled navigation menu and reduced-motion rules are present. The reveal animation leaves content visible unless client-side motion setup runs.
 - Google Maps is embedded on the homepage and Contact page. The footer includes the practice address, hours, phone and email.
 - Static hosting provides the 404 page, but this repository does not define arbitrary 301 redirect rules. The canonical `www` host and apex forwarding are hosting/DNS configuration. A redirect from the older Chandni Vercel deployment would need a separate change in that Vercel project. No Dr. Abhijeet domain or project was changed.
+- The first audit deployment succeeded but reported that several workflow actions still declared Node 20 and that `ubuntu-latest` would migrate to Ubuntu 26 later in October 2026. Updated the workflow to supported Node 24-compatible action releases and pinned the build runner to Ubuntu 24.04 for a stable image.
 
 ## Validation performed
 
