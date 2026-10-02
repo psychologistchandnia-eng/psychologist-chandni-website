@@ -8,6 +8,7 @@ import { absoluteUrl, site } from "@/lib/site";
 
 export default function ServicePage({ service }: { service: Service }) {
   const path = servicePath(service.slug);
+  const bookingUrl = site.whatsapp.split("?")[0] + "?text=" + encodeURIComponent(`Hi Chandni, I’d like to book a consultation about ${service.title.toLowerCase()}.`);
   const condition = { "@type": "MedicalCondition", "name": service.condition };
   const pageSchema = {
     "@context": "https://schema.org",
@@ -35,7 +36,7 @@ export default function ServicePage({ service }: { service: Service }) {
             <h1>{service.h1}</h1>
             <p className="lead">{service.intro}</p>
             <div className="button-row">
-              <a className="button button-primary" href={site.whatsapp} target="_blank" rel="noopener noreferrer">Book on WhatsApp</a>
+              <a className="button button-primary" href={bookingUrl} target="_blank" rel="noopener noreferrer">Book now</a>
               <a className="button button-light" href={"tel:" + site.phone}>Call now</a>
             </div>
           </div>
@@ -117,8 +118,8 @@ export default function ServicePage({ service }: { service: Service }) {
             <span className="aside-monogram" aria-hidden="true">ca</span>
             <p className="eyebrow">About Chandni Akhenia</p>
             <h2>Psychologist in Malad West</h2>
-            <p>M.A. in Clinical Psychology · 6 years of experience. Chandni’s approach is collaborative and may draw on CBT, DBT-informed strategies and expressive techniques when appropriate.</p>
-            <a className="button button-primary button-full" href={site.whatsapp} target="_blank" rel="noopener noreferrer">Book a consultation</a>
+            <p>M.A. in Clinical Psychology · {site.experienceYears} years of experience. Chandni’s approach is collaborative and may draw on CBT, DBT-informed strategies and expressive techniques when appropriate.</p>
+            <a className="button button-primary button-full" href={bookingUrl} target="_blank" rel="noopener noreferrer">Book now on WhatsApp</a>
           </div>
           <div className="related-card">
             <p className="eyebrow">Keep exploring</p>
