@@ -8,7 +8,7 @@ import { absoluteUrl, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Chandni Akhenia, Psychologist in Malad West",
-  description: "Learn about Chandni Akhenia, her M.A. in Clinical Psychology, six years of experience and collaborative approach to care in Malad West, Mumbai.",
+  description: "Learn about Chandni Akhenia, her M.A. in Clinical Psychology, three years of experience and collaborative approach to care in Malad West, Mumbai.",
   alternates: { canonical: absoluteUrl("/about/") }
 };
 
@@ -41,12 +41,12 @@ export default function AboutPage() {
           <Reveal className="about-detail-copy">
             <p className="eyebrow">Psychologist · Malad West</p>
             <h2>Chandni Akhenia</h2>
-            <p>Chandni holds an M.A. in Clinical Psychology and has six years of experience. She works with individuals and couples who want to understand what they are experiencing, develop healthier coping skills and build more fulfilling relationships.</p>
+            <p>Chandni holds an M.A. in Clinical Psychology and has three years of experience. She works with individuals and couples who want to understand what they are experiencing, develop healthier coping skills and build more fulfilling relationships.</p>
             <p>Her approach is collaborative and client-centred. The existing practice information describes work informed by CBT and DBT, alongside creative and expressive techniques when appropriate. Sessions begin with the concerns and goals that matter to each person.</p>
             <p>Chandni also works with workplace wellness themes, including stress, emotional wellbeing, communication and boundaries. Details of language availability and programme formats are being confirmed for this page.</p>
             <div className="credential-list">
               <div><span className="credential-mark">01</span><span><strong>Education</strong><small>M.A. in Clinical Psychology</small></span></div>
-              <div><span className="credential-mark">02</span><span><strong>Experience</strong><small>6 years</small></span></div>
+              <div><span className="credential-mark">02</span><span><strong>Experience</strong><small>3 years</small></span></div>
               <div><span className="credential-mark">03</span><span><strong>Approach</strong><small>Collaborative, client-centred care</small></span></div>
               <div><span className="credential-mark">04</span><span><strong>Languages</strong><small>Details to be confirmed</small></span></div>
             </div>
@@ -63,6 +63,24 @@ export default function AboutPage() {
           <Reveal>
             <p>Therapy is a shared process. It can include listening, asking questions, noticing patterns, practising new ways to cope and checking whether the work still fits. You can ask questions and take part in decisions throughout.</p>
             <p>There is no need to arrive with a perfect explanation. If another kind of assessment or support is a better fit, that can be discussed. No single approach works the same way for everyone.</p>
+          </Reveal>
+        </div>
+      </section>
+      <section className="section training-section" id="internships-training">
+        <div className="shell training-grid">
+          <Reveal className="training-art">
+            <Image src="/images/learning-notes-line-art.svg" alt="Decorative illustration of an open notebook and a growing plant" width={440} height={360} sizes="(max-width: 760px) 88vw, 420px" />
+          </Reveal>
+          <Reveal className="training-copy">
+            <p className="eyebrow">Internships, training & experience</p>
+            <h2>Grounded in study and ongoing practice.</h2>
+            <p>Chandni holds an M.A. in Clinical Psychology and has three years of experience. Her approach is collaborative and may draw on CBT, DBT-informed strategies and expressive techniques when appropriate.</p>
+            <div className="training-facts">
+              <div><span className="credential-mark">01</span><span><strong>Academic qualification</strong><small>M.A. in Clinical Psychology</small></span></div>
+              <div><span className="credential-mark">02</span><span><strong>Professional experience</strong><small>3 years</small></span></div>
+              <div><span className="credential-mark">03</span><span><strong>Internships & additional training</strong><small>Specific placements and courses are not listed until verified.</small></span></div>
+            </div>
+            <Link className="button button-primary" href="/contact/">Book a consultation</Link>
           </Reveal>
         </div>
       </section>
