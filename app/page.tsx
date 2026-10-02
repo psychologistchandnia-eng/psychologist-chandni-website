@@ -105,7 +105,7 @@ export default function HomePage() {
           <Reveal className="about-preview-copy">
             <p className="eyebrow">Meet Chandni</p>
             <h2>Curiosity, care and room to be human.</h2>
-            <p>Chandni Akhenia holds an M.A. in Clinical Psychology and has six years of experience. Her approach is collaborative and client-centred, drawing on CBT, DBT-informed strategies and expressive techniques when appropriate.</p>
+            <p>Chandni Akhenia holds an M.A. in Clinical Psychology and has three years of experience. Her approach is collaborative and client-centred, drawing on CBT, DBT-informed strategies and expressive techniques when appropriate.</p>
             <p>Sessions make space to understand patterns, develop practical coping skills and build more fulfilling relationships—at a pace that respects your needs.</p>
             <Link className="text-link" href="/about/">More about Chandni <span aria-hidden="true">↗</span></Link>
           </Reveal>
@@ -133,6 +133,20 @@ export default function HomePage() {
             ))}
           </div>
           <div className="center-cta"><Link className="button button-primary" href="/contact/">Plan a first visit</Link></div>
+        </div>
+      </section>
+
+      <section className="section conversation-section">
+        <div className="shell conversation-grid">
+          <Reveal className="conversation-art">
+            <Image src="/images/quiet-room-line-art.svg" alt="Decorative line illustration of two chairs, a small table and a plant" width={520} height={400} sizes="(max-width: 760px) 88vw, 500px" />
+          </Reveal>
+          <Reveal className="conversation-copy">
+            <p className="eyebrow">A space to begin</p>
+            <h2>Take the next step at your own pace.</h2>
+            <p>In-person appointments are held at Sun Multispeciality Hospital in Malad West. Online appointments are also available by prior booking.</p>
+            <Link className="text-link" href="/contact/">See contact and directions <span aria-hidden="true">↗</span></Link>
+          </Reveal>
         </div>
       </section>
 
