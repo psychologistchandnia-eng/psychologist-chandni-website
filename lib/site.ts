@@ -3,7 +3,7 @@ export const site = {
   practitioner: "Chandni Akhenia",
   title: "Psychologist",
   credential: "M.A. in Clinical Psychology",
-  experienceYears: 6,
+  experienceYears: 3,
   baseUrl: "https://www.besttherapistnearme.in",
   phoneDisplay: "+91 77188 05593",
   phone: "+917718805593",
