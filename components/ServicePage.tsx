@@ -5,6 +5,7 @@ import LineIcon, { iconFor } from "@/components/LineIcon";
 import Reveal from "@/components/Reveal";
 import { faqPageSchema, serviceBySlug, servicePath, type Service } from "@/lib/services";
 import { absoluteUrl, site } from "@/lib/site";
+import { articles, articlePath } from "@/lib/articles";
 
 export default function ServicePage({ service }: { service: Service }) {
   const path = servicePath(service.slug);
@@ -137,6 +138,11 @@ export default function ServicePage({ service }: { service: Service }) {
               if (!related) return null;
               return <Link className="related-link" href={servicePath(slug)} key={slug}><LineIcon name={iconFor(index)} /><span>{related.title}</span><span aria-hidden="true">↗</span></Link>;
             })}
+          </div>
+          <div className="related-card">
+            <p className="eyebrow">Practical reading</p><h2>Helpful guides</h2>
+            {articles.filter((article) => article.relatedServices.includes(service.slug)).slice(0, 3).map((article) => <Link className="related-link" href={articlePath(article.slug)} key={article.slug}><span>{article.title}</span><span aria-hidden="true">↗</span></Link>)}
+            <Link className="text-link" href="/articles/">All articles ↗</Link>
           </div>
         </aside>
       </div>

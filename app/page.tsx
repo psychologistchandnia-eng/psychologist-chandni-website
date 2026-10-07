@@ -4,6 +4,8 @@ import LineIcon, { iconFor } from "@/components/LineIcon";
 import MapEmbed from "@/components/MapEmbed";
 import Reveal from "@/components/Reveal";
 import SiteJsonLd from "@/components/SiteJsonLd";
+import ArticleCards from "@/components/ArticleCards";
+import { articles } from "@/lib/articles";
 import { services, servicePath } from "@/lib/services";
 import { site } from "@/lib/site";
 import { pageMetadata } from "@/lib/metadata";
@@ -84,6 +86,7 @@ export default function HomePage() {
                   <span className="service-card-title">{service.title}</span>
                   <span className="service-card-arrow" aria-hidden="true">↗</span>
                 </Link>
+                <a className="service-card-booking" href={site.whatsapp} target="_blank" rel="noopener noreferrer">Book now <span aria-hidden="true">↗</span></a>
               </Reveal>
             ))}
           </div>
@@ -147,6 +150,14 @@ export default function HomePage() {
             <p>In-person appointments are held at Sun Multispeciality Hospital in Malad West. Online appointments are also available by prior booking.</p>
             <Link className="text-link" href="/contact/">See contact and directions <span aria-hidden="true">↗</span></Link>
           </Reveal>
+        </div>
+      </section>
+
+      <section className="section guides-preview">
+        <div className="shell">
+          <div className="section-heading"><p className="eyebrow">Read at your pace</p><h2>A little clarity before the first step.</h2><p>Practical guides to starting therapy, everyday pressures and making room for your own needs.</p></div>
+          <ArticleCards items={[articles[0], articles[2], articles[8]]} />
+          <div className="center-cta"><Link className="button button-outline" href="/articles/">Explore all articles</Link></div>
         </div>
       </section>
 

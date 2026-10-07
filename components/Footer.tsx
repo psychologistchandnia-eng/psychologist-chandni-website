@@ -23,6 +23,7 @@ export default function Footer() {
           <h2>Explore</h2>
           <Link href="/about/">About Chandni</Link>
           <Link href="/#services">Areas of support</Link>
+          <Link href="/articles/">Articles and practical guides</Link>
           <Link href="/faq/">Frequently asked questions</Link>
           <Link href="/contact/">Contact and directions</Link>
           <a href={site.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -30,7 +31,7 @@ export default function Footer() {
       </div>
       <div className="shell footer-bottom">
         <p>© {new Date().getFullYear()} Psychologist Chandni Akhenia</p>
-        <p>Psychology · Relationships · Emotional wellbeing</p>
+        <Link href="/privacy/">Website privacy</Link>
       </div>
     </footer>
   );

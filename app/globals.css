@@ -452,3 +452,51 @@ p { margin: 0 0 18px; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .motion-ready .reveal:not(.is-visible) { opacity: 1; transform: none; }
 }
+
+/* Readable guides and direct appointment access. */
+.guides-preview { background: var(--pink-soft); }
+.article-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.guide-card { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding: 30px; border: 1px solid var(--line); border-radius: 22px; background: var(--paper); transition: transform .2s ease, box-shadow .2s ease; }
+.guide-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
+.guide-card h3 { font-size: 32px; line-height: 1.18; }
+.guide-card p { color: var(--muted); font-size: 15px; line-height: 1.8; margin: 0 0 6px; }
+.guide-card .text-link { margin-top: auto; }
+.guide-category { color: var(--forest); font-size: 12px; line-height: 1.7; }
+.guide-editorial-note { max-width: 780px; margin-bottom: 40px; color: var(--muted); font-size: 16px; }
+.reading-page .page-title-block { max-width: 900px; }
+.reading-page h1 { font-size: clamp(40px, 5.3vw, 64px); overflow-wrap: break-word; }
+.guide-date { margin-top: 24px; color: var(--muted); font-size: 13px; }
+.guide-contents { padding: 25px 30px; border-radius: 18px; background: var(--sage-soft); }
+.guide-contents h2 { font-size: 30px; }
+.guide-contents ol { padding-left: 20px; margin-bottom: 0; }
+.guide-contents li { padding: 5px 0; font-size: 15px; }
+.guide-contents a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.service-article { min-width: 0; }
+.article-section p, .check-list, .faq-item p, .faq-item summary { font-size: 16px; line-height: 1.85; }
+.article-section .guide-source { font-size: 13px; }
+.guide-source a { color: var(--forest); text-decoration: underline; text-underline-offset: 4px; }
+.guide-source { overflow-wrap: anywhere; }
+.service-card-wrap { display: flex; flex-direction: column; gap: 7px; }
+.service-card { flex: 1; }
+.service-card-booking { display: flex; align-items: center; justify-content: space-between; min-height: 44px; padding: 9px 17px; border-radius: 12px; background: var(--baby-pink); color: var(--forest-deep); font-size: 13px; font-weight: 600; transition: background .2s ease; }
+.service-card-booking:hover { background: var(--pink); }
+.map-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; min-height: 346px; text-align: center; background: linear-gradient(150deg, var(--sage-soft), var(--pink-soft)); }
+.map-placeholder h3 { font-size: 29px; }
+.map-placeholder p { margin: 0; color: var(--muted); font-size: 14px; }
+.map-placeholder small { max-width: 270px; color: var(--muted); font-size: 12px; }
+.map-pin { color: var(--forest); font-size: 32px; line-height: 1; }
+.privacy-copy { max-width: 800px; padding-block: 45px 80px; }
+.footer-bottom > a { font-size: 13px; text-decoration: underline; text-underline-offset: 4px; }
+.footer-contact address, .footer-contact p, .footer-nav a, .contact-detail { font-size: 14px; }
+.about-detail-copy > p:not(.eyebrow), .approach-grid p:not(.eyebrow) { font-size: 16px; }
+@media (max-width: 1000px) { .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 760px) {
+  .article-grid { grid-template-columns: 1fr; gap: 16px; }
+  .guide-card { padding: 26px; }
+  .guide-card h3 { font-size: 31px; }
+  .guide-contents { padding: 22px; }
+  .reading-page .service-aside, .service-page .service-aside { grid-row: auto; }
+  .reading-page .related-card, .service-page .related-card { display: block; }
+  .article-section p, .check-list, .faq-item p, .faq-item summary { font-size: 16px; }
+  .map-placeholder { min-height: 310px; padding: 20px; }
+}

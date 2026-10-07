@@ -14,10 +14,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const service = serviceBySlug.get(slug);
   if (!service) return {};
-  const title = service.h1;
   return pageMetadata({
-    title,
-    description: "Learn about " + service.title.toLowerCase() + " support in Malad West, Mumbai with Psychologist Chandni Akhenia. Read about common concerns, counselling and first visits.",
+    title: service.metaTitle,
+    description: service.metaDescription,
     path: servicePath(service.slug),
     openGraphType: "article"
   });

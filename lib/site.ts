@@ -10,7 +10,6 @@ export const site = {
   whatsapp: "https://wa.me/917718805593?text=Hi%20Chandni%2C%20I%27d%20like%20to%20book%20a%20psychology%20consultation.",
   email: "psychologistchandnia@gmail.com",
   instagram: "https://www.instagram.com/psychologistchandni/",
-  linkedIn: "https://www.linkedin.com/in/chandaniakhenia/",
   googleBusiness: "https://maps.app.goo.gl/vszs8PiPLsGHpra67",
   googleMapsPlace: "https://www.google.com/maps/place/Chandni+Akhenia/@19.1902985,72.8415679,16z/data=!4m6!3m5!1s0x41e1231c282f8c23:0xe9e83c5c652944dc!8m2!3d19.1902326!4d72.8418725!16s%2Fg%2F11xgbf6qkm",
   address: "Sun Multispeciality Hospital, BJ Patel Road, near SNDT College and Liberty Garden, Malad, Kanchpada, Malad West, Mumbai, Maharashtra 400067",

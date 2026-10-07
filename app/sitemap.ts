@@ -1,19 +1,17 @@
 import type { MetadataRoute } from "next";
 import { services, servicePath } from "@/lib/services";
 import { site, absoluteUrl } from "@/lib/site";
+import { articles, articlePath, articlePublishedDate } from "@/lib/articles";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ["/", "/about/", "/faq/", "/contact/"].map((path) => ({
-    url: absoluteUrl(path),
-    changeFrequency: "monthly" as const,
-    priority: path === "" ? 1 : 0.7
+  const staticPages = ["/", "/about/", "/faq/", "/contact/", "/articles/", "/privacy/"].map((path) => ({
+    url: absoluteUrl(path)
   }));
   const servicePages = services.map((service) => ({
-    url: absoluteUrl(servicePath(service.slug)),
-    changeFrequency: "monthly" as const,
-    priority: 0.65
+    url: absoluteUrl(servicePath(service.slug))
   }));
-  return [...staticPages, ...servicePages].filter((entry) => entry.url.startsWith(site.baseUrl));
+  const articlePages = articles.map((article) => ({ url: absoluteUrl(articlePath(article.slug)), lastModified: articlePublishedDate }));
+  return [...staticPages, ...servicePages, ...articlePages].filter((entry) => entry.url.startsWith(site.baseUrl));
 }

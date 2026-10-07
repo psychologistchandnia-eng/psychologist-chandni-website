@@ -21,7 +21,7 @@ export default function SiteJsonLd() {
         "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Master's degree", "name": site.credential },
         "image": site.baseUrl + site.portrait,
         "url": site.baseUrl + "/about/",
-        "sameAs": [site.googleMapsPlace, site.instagram, site.linkedIn, site.profileLinks.practo, site.profileLinks.youtube].filter(Boolean)
+        "sameAs": [site.googleMapsPlace, site.instagram, site.profileLinks.practo, site.profileLinks.youtube].filter(Boolean)
       },
       {
         "@type": "ProfessionalService",
@@ -54,7 +54,7 @@ export default function SiteJsonLd() {
         "areaServed": site.areasServed.map((name) => ({ "@type": "Place", "name": name })),
         "knowsAbout": "Psychology",
         "employee": { "@id": site.baseUrl + "/#chandni" },
-        "sameAs": [site.googleMapsPlace, site.instagram, site.linkedIn, site.profileLinks.practo, site.profileLinks.youtube].filter(Boolean)
+        "sameAs": [site.googleMapsPlace, site.instagram, site.profileLinks.practo, site.profileLinks.youtube].filter(Boolean)
       }
     ]
   };

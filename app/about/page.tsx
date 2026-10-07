@@ -43,12 +43,12 @@ export default function AboutPage() {
             <h2>Chandni Akhenia</h2>
             <p>Chandni holds an M.A. in Clinical Psychology and has three years of experience. She works with individuals and couples who want to understand what they are experiencing, develop healthier coping skills and build more fulfilling relationships.</p>
             <p>Her approach is collaborative and client-centred. The existing practice information describes work informed by CBT and DBT, alongside creative and expressive techniques when appropriate. Sessions begin with the concerns and goals that matter to each person.</p>
-            <p>Chandni also works with workplace wellness themes, including stress, emotional wellbeing, communication and boundaries. Details of language availability and programme formats are being confirmed for this page.</p>
+            <p>Chandni also works with workplace wellness themes, including stress, emotional wellbeing, communication and boundaries. Ask about session languages and workplace wellness formats when booking.</p>
             <div className="credential-list">
               <div><span className="credential-mark">01</span><span><strong>Education</strong><small>M.A. in Clinical Psychology</small></span></div>
               <div><span className="credential-mark">02</span><span><strong>Experience</strong><small>3 years</small></span></div>
               <div><span className="credential-mark">03</span><span><strong>Approach</strong><small>Collaborative, client-centred care</small></span></div>
-              <div><span className="credential-mark">04</span><span><strong>Languages</strong><small>Details to be confirmed</small></span></div>
+              <div><span className="credential-mark">04</span><span><strong>Session languages</strong><small>Ask when booking</small></span></div>
             </div>
             <Link className="button button-primary" href="/contact/">Book a consultation</Link>
           </Reveal>
