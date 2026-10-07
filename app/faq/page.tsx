@@ -22,7 +22,7 @@ const questions = [
   ["Can I consult for relationship problems?", "Yes. Individuals and couples can discuss communication, conflict, trust, boundaries and other relationship concerns."],
   ["Can I consult for workplace stress or burnout?", "Yes. Counselling can explore stress, work pressures, emotional exhaustion, boundaries and practical coping strategies."],
   ["Can family members participate in therapy?", "Family participation can be discussed with consent, a clear purpose and agreed privacy expectations."],
-  ["Where are in-person appointments held?", "At Sun Multispeciality Hospital, BJ Patel Road, near SNDT College and Liberty Garden, Malad West, Mumbai 400067. See the Contact page for directions."],
+  ["Where are in-person appointments held?", "At Sun Multispeciality Hospital, BJ Patel Road, near SNDT College and Liberty Garden, Malad West, Mumbai 400064. See the Contact page for directions."],
   ["What are the clinic hours?", "The Google Business Profile currently lists Monday to Saturday, 11:00 am–9:00 pm, and Sunday, 11:00 am–3:00 pm."],
   ["What does a consultation cost?", "Fees are not published on this website. Ask about current fees when requesting an appointment."],
   ["What if I need urgent help?", "This practice is not an emergency service. If there is immediate danger, contact local emergency services. In India, Tele-MANAS is available at 14416."]
