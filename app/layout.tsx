@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: "Psychologist in Malad West, Mumbai | Chandni Akhenia",
     description: "A calm, collaborative space for psychological support in Malad West and online.",
     url: site.baseUrl,
-    images: [{ url: site.portrait, width: 414, height: 414, alt: "Psychologist Chandni Akhenia" }]
+    images: [{ url: site.portrait, width: 770, height: 1024, alt: "Psychologist Chandni Akhenia" }]
   },
   twitter: {
     card: "summary_large_image",

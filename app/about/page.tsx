@@ -36,7 +36,7 @@ export default function AboutPage() {
       <section className="section about-detail-section">
         <div className="shell about-detail-grid">
           <Reveal className="about-detail-photo">
-            <Image src={site.portrait} alt="Chandni Akhenia, psychologist" width={414} height={414} sizes="(max-width: 760px) 86vw, 450px" />
+            <Image src={site.portrait} alt="Chandni Akhenia, psychologist" width={770} height={1024} sizes="(max-width: 760px) 86vw, 450px" />
           </Reveal>
           <Reveal className="about-detail-copy">
             <p className="eyebrow">Psychologist · Malad West</p>
