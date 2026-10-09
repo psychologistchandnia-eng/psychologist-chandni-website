@@ -30,6 +30,7 @@ export default function AboutPage() {
             <p className="eyebrow">A little about the practice</p>
             <h1>Care shaped around <em>your story.</em></h1>
             <p className="lead">Meet Chandni Akhenia, a psychologist offering psychological support in Malad West, Mumbai and online.</p>
+            <Image className="about-intro-portrait" src={site.portrait} alt="Chandni Akhenia seated at her clinic desk" width={770} height={1024} sizes="(max-width: 760px) 86vw, 320px" />
           </div>
         </div>
       </section>

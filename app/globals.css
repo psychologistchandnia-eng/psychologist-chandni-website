@@ -500,3 +500,4 @@ p { margin: 0 0 18px; }
   .article-section p, .check-list, .faq-item p, .faq-item summary { font-size: 16px; }
   .map-placeholder { min-height: 310px; padding: 20px; }
 }
+.about-intro-portrait { display: block; width: min(100%, 320px); height: auto; margin-top: 28px; border-radius: 24px; box-shadow: var(--shadow); }
