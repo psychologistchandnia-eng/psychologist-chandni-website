@@ -17,7 +17,7 @@ export default function AboutPage() {
     "@type": "AboutPage",
     "name": "About Chandni Akhenia",
     "url": absoluteUrl("/about/"),
-    "mainEntity": { "@type": "Person", "name": site.practitioner, "jobTitle": site.title, "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Master's degree", "name": site.credential }, "image": absoluteUrl(site.portrait) }
+    "mainEntity": { "@type": "Person", "name": site.practitioner, "jobTitle": site.title, "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Master's degree", "name": site.credential }, "image": absoluteUrl("/images/chandni-akhenia-about.jpeg") }
   };
   return (
     <main id="main" className="about-editorial">
@@ -32,7 +32,7 @@ export default function AboutPage() {
               <p className="about-opening-lead">I’m Chandni, a psychologist in Malad West, Mumbai. I work with people who want to understand their emotions, navigate relationships and find ways through life’s difficult moments.</p>
               <Link className="button button-primary" href="/contact/">Let’s start a conversation</Link>
             </div>
-            <figure className="about-photo"><Image src={site.portrait} alt="Chandni Akhenia seated at her clinic desk" width={770} height={1024} sizes="(max-width: 760px) 86vw, 340px" priority /><figcaption>Chandni Akhenia · Malad West, Mumbai</figcaption></figure>
+            <figure className="about-photo"><Image src="/images/chandni-akhenia-about.jpeg" alt="Portrait of Chandni Akhenia wearing glasses" width={899} height={1599} sizes="(max-width: 760px) 86vw, 340px" priority /><figcaption>Chandni Akhenia · Malad West, Mumbai</figcaption></figure>
           </div>
           <dl className="about-profile-strip"><div><dt>Qualification</dt><dd>M.A. in Clinical Psychology</dd></div><div><dt>Experience</dt><dd>3 years of practice</dd></div><div><dt>Consultations</dt><dd>In person &amp; online</dd></div></dl>
         </div>

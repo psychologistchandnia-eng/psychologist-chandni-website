@@ -538,3 +538,9 @@ body, button, input, textarea, select { font-family: var(--font-display), serif;
 .about-learning-list { padding-left: 22px; font-size: 19px; line-height: 1.9; margin: 20px 0 26px; }
 @media(max-width:900px) { .about-opening-grid { grid-template-columns: minmax(0,1fr) 280px; gap: 28px; } .about-story-grid, .about-learning-grid { gap: 32px; } .about-care-grid { gap: 14px; } .about-care-grid article { padding: 20px; } }
 @media(max-width:760px) { .about-opening-grid, .about-story-grid, .about-learning-grid, .about-care-grid { grid-template-columns: 1fr; gap: 28px; } .about-photo { width: min(100%,300px); margin-inline: auto; } .about-story-grid .about-photo { grid-row: 2; } .about-profile-strip { grid-template-columns: 1fr; gap: 18px; } .about-profile-strip div { padding-bottom: 14px; border-bottom: 1px solid var(--line); } .about-editorial p { font-size: 18px; } }
+
+/* Prominent Cardo navigation on desktop and mobile. */
+.primary-nav { font-size: 16px; font-weight: 700; gap: clamp(12px, 1.5vw, 20px); }
+.primary-nav > a { font-weight: 700; }
+@media (min-width: 761px) and (max-width: 1150px) { .header-inner { flex-wrap: wrap; justify-content: center; padding-block: 14px; gap: 14px; } .primary-nav { justify-content: center; flex-wrap: wrap; } }
+@media (max-width: 760px) { .primary-nav { font-size: 18px; gap: 0; } .primary-nav > a:not(.nav-booking) { padding: 14px 5px; } }
