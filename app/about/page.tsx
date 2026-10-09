@@ -36,7 +36,7 @@ export default function AboutPage() {
       <section className="section about-detail-section">
         <div className="shell about-detail-grid">
           <Reveal className="about-detail-photo">
-            <Image src={site.portrait} alt="Chandni Akhenia, psychologist" width={770} height={1024} sizes="(max-width: 760px) 86vw, 450px" />
+            <Image src="/images/chandni-akhenia-about.jpeg" alt="Portrait of psychologist Chandni Akhenia wearing glasses" width={899} height={1599} sizes="(max-width: 760px) 86vw, 450px" />
           </Reveal>
           <Reveal className="about-detail-copy">
             <p className="eyebrow">Psychologist · Malad West</p>
@@ -69,7 +69,7 @@ export default function AboutPage() {
       <section className="section training-section" id="internships-training">
         <div className="shell training-grid">
           <Reveal className="training-art">
-            <Image src={site.portrait} alt="Chandni Akhenia seated in her clinic" width={770} height={1024} sizes="(max-width: 760px) 88vw, 420px" />
+            <Image src="/images/chandni-akhenia-internships.jpeg" alt="Chandni Akhenia smiling in a striped shirt" width={903} height={1600} sizes="(max-width: 760px) 88vw, 420px" />
           </Reveal>
           <Reveal className="training-copy">
             <p className="eyebrow">Internships & certification</p>
