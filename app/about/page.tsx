@@ -69,7 +69,7 @@ export default function AboutPage() {
       <section className="section training-section" id="internships-training">
         <div className="shell training-grid">
           <Reveal className="training-art">
-            <Image src="/images/learning-notes-line-art.svg" alt="" width={440} height={360} sizes="(max-width: 760px) 88vw, 420px" />
+            <Image src={site.portrait} alt="Chandni Akhenia seated in her clinic" width={770} height={1024} sizes="(max-width: 760px) 88vw, 420px" />
           </Reveal>
           <Reveal className="training-copy">
             <p className="eyebrow">Internships & certification</p>
