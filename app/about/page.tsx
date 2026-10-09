@@ -26,10 +26,12 @@ export default function AboutPage() {
       <section className="page-intro">
         <div className="shell">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About Chandni", href: "/about/" }]} />
+          <div className="about-intro-grid">
           <div className="page-title-block">
             <p className="eyebrow">A little about the practice</p>
             <h1>Care shaped around <em>your story.</em></h1>
             <p className="lead">Meet Chandni Akhenia, a psychologist offering psychological support in Malad West, Mumbai and online.</p>
+          </div>
             <Image className="about-intro-portrait" src={site.portrait} alt="Chandni Akhenia seated at her clinic desk" width={770} height={1024} sizes="(max-width: 760px) 86vw, 320px" />
           </div>
         </div>
