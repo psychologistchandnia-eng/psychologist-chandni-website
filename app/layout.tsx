@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cardo, Inter } from "next/font/google";
+import { Cardo } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -13,11 +13,6 @@ const display = Cardo({
   display: "swap"
 });
 
-const body = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-  display: "swap"
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.baseUrl),
@@ -46,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={display.variable + " " + body.variable}>
+    <html lang="en" className={display.variable}>
       <body>
         <a className="skip-link" href="#main">Skip to content</a>
         <Header />
