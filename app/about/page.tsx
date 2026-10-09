@@ -6,9 +6,10 @@ import { absoluteUrl, site } from "@/lib/site";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
-  title: "About Chandni Akhenia, Psychologist in Malad West",
+  title: "Chandni Akhenia | Psychologist in Malad West, Mumbai",
   description: "Learn about Chandni Akhenia, her M.A. in Clinical Psychology, three years of experience and collaborative approach to care in Malad West, Mumbai.",
-  path: "/about/"
+  path: "/about/",
+  image: { path: "/images/chandni-akhenia-about.jpeg", width: 899, height: 1599, alt: "Chandni Akhenia, psychologist in Malad West, Mumbai" }
 });
 
 export default function AboutPage() {
@@ -17,7 +18,7 @@ export default function AboutPage() {
     "@type": "AboutPage",
     "name": "About Chandni Akhenia",
     "url": absoluteUrl("/about/"),
-    "mainEntity": { "@type": "Person", "name": site.practitioner, "jobTitle": site.title, "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Master's degree", "name": site.credential }, "image": absoluteUrl("/images/chandni-akhenia-about.jpeg") }
+    "mainEntity": { "@type": "Person", "@id": absoluteUrl("/#chandni"), "url": absoluteUrl("/about/"), "sameAs": [site.googleBusiness, site.instagram], "name": site.practitioner, "jobTitle": site.title, "hasCredential": { "@type": "EducationalOccupationalCredential", "credentialCategory": "Master's degree", "name": site.credential }, "image": absoluteUrl("/images/chandni-akhenia-about.jpeg") }
   };
   return (
     <main id="main" className="about-editorial">
@@ -28,7 +29,7 @@ export default function AboutPage() {
           <div className="about-opening-grid">
             <div>
               <p className="eyebrow">About Chandni Akhenia · Psychologist</p>
-              <h1>A space to feel heard.<br /><em>A place to begin.</em></h1>
+              <h1>Meet Chandni Akhenia.<br /><em>A space to feel heard.</em></h1>
               <p className="about-opening-lead">I’m Chandni, a psychologist in Malad West, Mumbai. I work with people who want to understand their emotions, navigate relationships and find ways through life’s difficult moments.</p>
               <Link className="button button-primary" href="/contact/">Let’s start a conversation</Link>
             </div>
@@ -42,7 +43,7 @@ export default function AboutPage() {
           <figure className="about-photo"><Image src="/images/chandni-akhenia-about.jpeg" alt="Portrait of Chandni Akhenia wearing glasses" width={899} height={1599} sizes="(max-width: 760px) 86vw, 320px" /></figure>
           <div className="about-story"><p className="eyebrow">The person behind the practice</p><h2>Hello, I’m Chandni.</h2>
             <p>Reaching out for support can feel like a big step. You may have a clear concern, or simply a feeling that something has become difficult to manage. You are welcome to begin with either.</p>
-            <p>I hold an M.A. in Clinical Psychology and have three years of experience. My work with individuals and couples includes anxiety, stress, low mood, relationship concerns, grief and self-esteem.</p>
+            <p>I hold an M.A. in Clinical Psychology and have three years of experience. My work with individuals and couples includes <Link className="about-text-link" href="/anxiety/">anxiety</Link>, <Link className="about-text-link" href="/stress-workplace-burnout/">stress and workplace burnout</Link>, low mood, <Link className="about-text-link" href="/relationship-couples-counselling/">relationship concerns</Link>, grief and self-esteem.</p>
             <p>In our conversations, I aim to understand your experiences in the context of your life. We explore what matters to you, the patterns you notice and the changes you would like to work towards. Your questions and preferences are part of that process.</p>
             <p>I also work with workplace wellbeing themes, including communication, emotional wellbeing and boundaries. In-person appointments take place at Sun Multispeciality Hospital in Malad West, with online consultations available by prior booking.</p>
           </div>

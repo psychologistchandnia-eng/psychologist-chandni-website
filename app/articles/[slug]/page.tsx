@@ -12,7 +12,7 @@ export const dynamicParams = false;
 export function generateStaticParams() { return articles.map((article) => ({ slug: article.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const article = articleBySlug.get((await params).slug);
-  return article ? pageMetadata({ title: article.title, description: article.description, path: articlePath(article.slug), openGraphType: "article" }) : {};
+  return article ? pageMetadata({ title: article.title, description: article.description, path: articlePath(article.slug), openGraphType: "article", publishedTime: articlePublishedDate }) : {};
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {

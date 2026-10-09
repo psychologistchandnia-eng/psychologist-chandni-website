@@ -7,7 +7,8 @@ export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = ["/", "/about/", "/faq/", "/contact/", "/articles/", "/privacy/"].map((path) => ({
-    url: absoluteUrl(path)
+    url: absoluteUrl(path),
+    ...(path === "/about/" ? { lastModified: "2026-10-09" } : {})
   }));
   const servicePages = services.map((service) => ({
     url: absoluteUrl(servicePath(service.slug))
