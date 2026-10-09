@@ -72,15 +72,15 @@ export default function AboutPage() {
             <Image src="/images/learning-notes-line-art.svg" alt="" width={440} height={360} sizes="(max-width: 760px) 88vw, 420px" />
           </Reveal>
           <Reveal className="training-copy">
-            <p className="eyebrow">Internships, training & experience</p>
-            <h2>Grounded in study and ongoing practice.</h2>
+            <p className="eyebrow">Internships & certification</p>
+            <h2>Internships and certification are available.</h2>
             <p>Chandni holds an M.A. in Clinical Psychology and has three years of experience. Her approach is collaborative and may draw on CBT, DBT-informed strategies and expressive techniques when appropriate.</p>
             <div className="training-facts">
               <div><span className="credential-mark">01</span><span><strong>Academic qualification</strong><small>M.A. in Clinical Psychology</small></span></div>
               <div><span className="credential-mark">02</span><span><strong>Professional experience</strong><small>3 years</small></span></div>
-              <div><span className="credential-mark">03</span><span><strong>Internships & additional training</strong><small>Specific placements and courses are not listed until verified.</small></span></div>
+              <div><span className="credential-mark">03</span><span><strong>Internships & certification</strong><small>Available. Enquire about eligibility, programme details and certification.</small></span></div>
             </div>
-            <Link className="button button-primary" href="/contact/">Book a consultation</Link>
+            <a className="button button-primary" href="https://wa.me/917718805593?text=Hi%20Chandni%2C%20I%27d%20like%20to%20enquire%20about%20internships%20and%20certification.">Enquire on WhatsApp</a>
           </Reveal>
         </div>
       </section>

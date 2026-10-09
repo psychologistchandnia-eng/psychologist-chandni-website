@@ -209,6 +209,7 @@ export default function HomePage() {
           <p className="crisis-note">This website is not an emergency service. For immediate support in India, call local emergency services or Tele-MANAS at <a href="tel:14416">14416</a>.</p>
         </div>
       </section>
-    </main>
+    <section className="section approach-section" id="internship-opportunities"><div className="shell approach-grid"><div><p className="eyebrow">Learning opportunities</p><h2>Internships &amp; certification available.</h2></div><div><p>Contact Chandni to enquire about eligibility, programme details and certification.</p><Link className="button button-primary" href="/about/#internships-training">Explore internships &amp; certification</Link></div></div></section>
+</main>
   );
 }
