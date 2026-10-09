@@ -50,8 +50,8 @@ export default function HomePage() {
               <Image
                 src={site.portrait}
                 alt="Chandni Akhenia, psychologist in Malad West, Mumbai"
-                width={770}
-                height={1024}
+                width={899}
+                height={1599}
                 sizes="(max-width: 760px) 82vw, (max-width: 1100px) 42vw, 440px"
                 priority
               />
@@ -99,8 +99,8 @@ export default function HomePage() {
             <Image
               src={site.portrait}
               alt="Portrait of Chandni Akhenia"
-              width={770}
-              height={1024}
+              width={899}
+              height={1599}
               sizes="(max-width: 760px) 86vw, 400px"
             />
             <span className="image-note">Chandni Akhenia · Psychologist</span>

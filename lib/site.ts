@@ -26,7 +26,7 @@ export const site = {
   ],
   googleRating: "4.9",
   googleReviewCount: 42,
-  portrait: "/images/chandni-akhenia-clinic.jpg",
+  portrait: "/images/chandni-akhenia-about.jpeg",
   areasServed: ["Malad", "Kandivali", "Kandivali West", "Goregaon", "Borivali", "Andheri", "Bandra", "Mumbai"],
   profileLinks: {
     practo: "",

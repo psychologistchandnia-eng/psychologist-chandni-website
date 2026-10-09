@@ -29,8 +29,8 @@ export default function AboutPage() {
           <div className="about-opening-grid">
             <div>
               <p className="eyebrow">About Chandni Akhenia · Psychologist</p>
-              <h1>Meet Chandni Akhenia.<br /><em>A space to feel heard.</em></h1>
-              <p className="about-opening-lead">I’m Chandni, a psychologist in Malad West, Mumbai. I work with people who want to understand their emotions, navigate relationships and find ways through life’s difficult moments.</p>
+              <h1>Care shaped around <em>your story.</em></h1>
+              <p className="about-opening-lead">I’m Chandni Akhenia, a psychologist in Malad West, Mumbai. I offer a space to talk openly, understand your experiences and explore what matters to you—in person or online.</p>
               <Link className="button button-primary" href="/contact/">Let’s start a conversation</Link>
             </div>
             <figure className="about-photo"><Image src="/images/chandni-akhenia-about.jpeg" alt="Portrait of Chandni Akhenia wearing glasses" width={899} height={1599} sizes="(max-width: 760px) 86vw, 340px" priority /><figcaption>Chandni Akhenia · Malad West, Mumbai</figcaption></figure>
@@ -42,9 +42,9 @@ export default function AboutPage() {
         <div className="shell about-story-grid">
           <figure className="about-photo"><Image src="/images/chandni-akhenia-about.jpeg" alt="Portrait of Chandni Akhenia wearing glasses" width={899} height={1599} sizes="(max-width: 760px) 86vw, 320px" /></figure>
           <div className="about-story"><p className="eyebrow">The person behind the practice</p><h2>Hello, I’m Chandni.</h2>
-            <p>Reaching out for support can feel like a big step. You may have a clear concern, or simply a feeling that something has become difficult to manage. You are welcome to begin with either.</p>
+            <p>You do not need to know exactly what is wrong before reaching out. We can begin with what feels difficult and make room for the questions that matter to you.</p>
             <p>I hold an M.A. in Clinical Psychology and have three years of experience. My work with individuals and couples includes <Link className="about-text-link" href="/anxiety/">anxiety</Link>, <Link className="about-text-link" href="/stress-workplace-burnout/">stress and workplace burnout</Link>, low mood, <Link className="about-text-link" href="/relationship-couples-counselling/">relationship concerns</Link>, grief and self-esteem.</p>
-            <p>In our conversations, I aim to understand your experiences in the context of your life. We explore what matters to you, the patterns you notice and the changes you would like to work towards. Your questions and preferences are part of that process.</p>
+            <p>My approach starts with listening to your story, without reducing you to a label. Together, we explore the patterns you want to understand and the changes you would like to make. Your needs, goals and pace guide our conversations.</p>
             <p>I also work with workplace wellbeing themes, including communication, emotional wellbeing and boundaries. In-person appointments take place at Sun Multispeciality Hospital in Malad West, with online consultations available by prior booking.</p>
           </div>
         </div>

@@ -28,7 +28,7 @@ export function pageMetadata({ title, description, path, image: preview, publish
       title: fullTitle,
       description,
       url,
-      images: [{ url: image, width: preview?.width ?? 770, height: preview?.height ?? 1024, alt: preview?.alt ?? "Psychologist Chandni Akhenia" }]
+      images: [{ url: image, width: preview?.width ?? 899, height: preview?.height ?? 1599, alt: preview?.alt ?? "Psychologist Chandni Akhenia" }]
     },
     twitter: {
       card: "summary_large_image",

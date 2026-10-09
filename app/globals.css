@@ -544,3 +544,7 @@ body, button, input, textarea, select { font-family: var(--font-display), serif;
 .primary-nav > a { font-weight: 700; }
 @media (min-width: 761px) and (max-width: 1150px) { .header-inner { flex-wrap: wrap; justify-content: center; padding-block: 14px; gap: 14px; } .primary-nav { justify-content: center; flex-wrap: wrap; } }
 @media (max-width: 760px) { .primary-nav { font-size: 18px; gap: 0; } .primary-nav > a:not(.nav-booking) { padding: 14px 5px; } }
+
+/* Show the new portrait fully, including the forehead, across home photo panels. */
+.portrait-frame { aspect-ratio: auto; border-radius: 24px; }
+.portrait-frame img, .about-preview-image img { display: block; height: auto; aspect-ratio: auto; object-fit: contain; border-radius: 18px; }
